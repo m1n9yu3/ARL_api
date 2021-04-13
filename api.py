@@ -46,10 +46,10 @@ headers = {
     'Content-Type': 'application/json; charset=UTF-8'}
 
 
-def del_title_host(title: str):
+def del_title_host(title: str, url, user, password):
     """删除指定标题的 任务数据"""
-    url = "129.226.114.137:3389"
-    token = login(url, 'admin', "248452430PassArl")
+    url = url
+    token = login(url, user, password)
     headers['token'] = token
     result = []
     page_num = 1
@@ -76,10 +76,10 @@ def del_title_host(title: str):
 
 
 
-def del_same_task():
+def del_same_task(url, user, password):
     """删除相同 url 的任务"""
-    url = "129.226.114.137:3389"
-    token = login(url, 'admin', "248452430PassArl")
+    url = url
+    token = login(url, user, password)
     headers['token'] = token
 
     result = []
