@@ -4,6 +4,38 @@
 
 
 
+
+
+
+
+# 自动化任务设想
+
+1. 根据 title 删除指定的 任务， 比如说 "云防护-站点不存在"
+2. 删除相同的 target 
+3. 相同任务名，子域名导出
+
+
+# 使用方法
+
+config.ini 文件 填充相应的配置
+
+
+删除相同 target 的任务
+```shell
+python3 main.py --del_same
+```
+
+
+删除指定标题的资产任务
+```shell
+python3 main.py --del_title  xxx
+```
+比如 云防护-站点不存在
+
+
+
+
+
 # 接口收集
 
 登录接口
@@ -99,14 +131,3 @@ Connection: close
 
 {"task_id":["6063ddfc081e5e00113f3561"],"del_task_data":true}
 ```
-
-
-
-# 自动化任务设想
-
-1. 根据 title 删除指定的 任务， 比如说 "云防护-站点不存在"
-2. 删除相同的 target 
-3. 相同任务名，子域名导出
-
-
-
