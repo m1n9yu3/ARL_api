@@ -1,5 +1,7 @@
 # arl api 编写
 
+该项目编写的目的, 因为当时使用的是 1h1g的小型主机，特别特别的卡，导致无法正常的删除任务，于是就有了这个项目
+
 快速使用 arl api , 进行信息导出
 
 基于[ARL](https://github.com/TophantTechnology/ARL)  开发
